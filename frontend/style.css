@@ -1,0 +1,99 @@
+:root {
+  --light: #F5D5E0;
+  --mid: #6667AB;
+  --primary: #7B337E;
+  --dark: #420D4B;
+  --darker: #210635;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--darker);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--primary);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--light);
+  color: var(--darker);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 400px;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+
+#imageInput {
+  margin: 1rem 0;
+}
+
+button {
+  background: var(--mid);
+  border: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--dark);
+}
+
+#previewContainer {
+  margin-top: 1rem;
+}
+
+#preview {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+#results {
+  margin-top: 1rem;
+}
+
+.chip {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  border-radius: 20px;
+}
+footer {
+  background: var(--dark);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
